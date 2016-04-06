@@ -9,4 +9,4 @@ fi
 [[ -f ./requirements.txt ]] && pip install -r ./requirements.txt
 [[ -f ./requirements_gunicorn.txt ]] && pip install -r ./requirements_gunicorn.txt
 cd ..
-gunicorn --timeout 120 --workers 4 --pid ./twitterservice --log-level=DEBUG -b 0.0.0.0:5431 twitterservice:app
+gunicorn --timeout 120 --workers 4 --pid ./twitterservice.pid --log-level=DEBUG -b 0.0.0.0:5431 twitterservice:app
