@@ -1,2 +1,2 @@
-# webms-twitterservice
-twitterservice microservice within the webms project
+this is the twitterservice.
+
